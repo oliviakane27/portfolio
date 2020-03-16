@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+@font-face {
+  font-family: "Pilowlava";
+  src: url(fonts/pilowlava-regular-webfont.woff2) format("woff2"),
+    url(fonts/pilowlava-regular-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/archia-thin-webfont.woff") format("woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/archia-light-webfont.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/archia-regular-webfont.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/archia-medium-webfont.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/archia-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Archia";
+  margin: 0;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 40px 20px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  justify-content: space-between;
+}
+section {
+  border: #aef4ff;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-family: "Pilowlava";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 35px;
+  color: #5780ff;
+  text-align: left;
+}
+h1 a {
+  color: #5780ff;
+}
+h2 {
+  font-family: "Archia";
+  font-size: 20px;
+  font-weight: 100px;
+  color: #121a4f;
+}
+
+h3 {
+  font-family: "Archia";
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  margin: 10% 15%;
+  padding: 70px 0 0 0;
+  color: #121a4f;
+  line-height: 1.5;
+}
+
+h4 {
+  font-family: "Pilowlava";
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  margin: 10% 15%;
+  padding: 70px 0 0 0;
+  color: #121a4f;
+  line-height: 1.5;
+}
+.project-heading {
+  font-size: 40px;
+  margin: 20% 15%;
+}
+.project-description {
+  margin: 5% 15%;
+  width: 50%;
+}
+
+h4 a:hover {
+  color: #7b68ee;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #121a4f;
+  font-weight: 300;
+}
+nav {
+  text-align: right;
+  padding: 70px;
+  list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+}
+
+nav a {
+  font-family: "Archia";
+  font-weight: 300;
+  font-size: 24px;
+  text-align: right;
+  color: #5780ff;
+  line-height: 1.5;
+  display: inline;
+  padding: 20px;
+  color: #08c1aa;
+}
+.highlight:hover {
+  font-family: "Pilowlava";
+  text-transform: uppercase;
+  color: mediumslateblue;
+  font-size: 30px;
+}
+
+.vertical-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.vertical-horizontal img {
+  width: 100%;
+}
+.horizontal-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.horizontal-horizontal img {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .divider,
+  .skinny-divider {
+    display: none;
+  }
+  .vertical {
+    max-width: 600px;
+    min-width: 300px;
+    width: 100%;
+
+    margin: 20px !important;
+  }
+
+  .square-1 {
+    max-width: 600px;
+    min-width: 250px;
+    width: 100%;
+  }
+  .rectangle-center {
+    width: 88% !important;
+  }
+  .rectangle-left,
+  .rectangle-right {
+    width: 88% !important;
+    max-width: 900px;
+  }
+  .rectangle-1,
+  .rectangle-2 {
+    max-width: 600px;
+    min-width: 300px;
+    width: 100%;
+    margin: 30px !important;
+  }
+}
+
+.divider {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 19%;
+}
+.skinny-divider {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 4%;
+}
+.very-skinny-divider {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 2%;
+}
+
+.vertical {
+  position: relative;
+  padding-left: 0px;
+  flex-basis: 28%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.vertical img {
+  width: 100%;
+}
+
+.vertical h2:hover {
+  color: #7b68ee;
+}
+
+.vertical h4 {
+  opacity: 0;
+  background-color: rgba(174, 244, 255, 0.9);
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0;
+  transition: all 300ms ease-out;
+}
+
+.vertical h4:hover {
+  opacity: 1;
+}
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+.overlay-container a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding-top: 70%;
+}
+.square-1 {
+  position: relative;
+  margin: 20px;
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 900px;
+}
+
+.square-1 img {
+  width: 100%;
+}
+.square-1 h2:hover {
+  color: #7b68ee;
+}
+
+.square-1 h4 {
+  opacity: 0;
+  background-color: rgba(87, 128, 255, 0.7);
+  position: absolute;
+  color: white;
+  margin: 0px;
+  top: 0px;
+  bottom: 230px;
+  left: 0px;
+  right: 0px;
+  padding-top: 50%;
+  transition: all 300ms ease-out;
+}
+
+.square-1 h4:hover {
+  opacity: 1;
+}
+
+.rectangle-center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  min-width: 200px;
+}
+.rectangle-center img {
+  width: 100%;
+}
+.rectangle-center h2 {
+  color: #121a4f;
+  text-align: left;
+}
+.rectangle-center h4 {
+  opacity: 0;
+  background-color: rgba(224, 120, 255, 0.8);
+  position: absolute;
+  color: white;
+  margin: 00px;
+  top: 0px;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+  padding-top: 30%;
+  transition: all 300ms ease-out;
+}
+
+.rectangle-center h4:hover {
+  opacity: 1;
+}
+.rectangle-center h2:hover {
+  color: #7b68ee;
+}
+.rectangle-left {
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-right: auto;
+  margin: 50px;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 200px;
+}
+.rectangle-left img {
+  width: 100%;
+}
+.rectangle-left h4 {
+  opacity: 0;
+  background-color: rgba(224, 120, 255, 0.8);
+  position: absolute;
+  color: white;
+  margin: 0px;
+  top: 0px;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+  padding-top: 30%;
+  transition: all 300ms ease-out;
+}
+
+.rectangle-left h4:hover {
+  opacity: 1;
+}
+.rectangle-left h2:hover {
+  color: #7b68ee;
+}
+
+.rectangle-right {
+  margin: 50px;
+  margin-left: auto;
+  text-align: right;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 200px;
+}
+.rectangle-right img {
+  width: 100%;
+}
+
+.rectangle-1 {
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 200px;
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 90px;
+}
+
+.rectangle-1 h4 {
+  opacity: 0;
+  background-color: rgba(174, 244, 255, 0.9);
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+  padding-top: 30%;
+  transition: all 300ms ease-out;
+  position: absolute;
+}
+
+.rectangle-1 h4:hover {
+  opacity: 1;
+}
+.rectangle-1 h2:hover {
+  color: #7b68ee;
+}
+
+.rectangle-2 {
+  position: relative;
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.rectangle-2 h4 {
+  opacity: 0;
+  background-color: rgba(8, 193, 170, 0.8);
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+  padding-top: 28%;
+  transition: all 300ms ease-out;
+  position: absolute;
+  color: white;
+}
+.rectangle-2 h4:hover {
+  opacity: 1;
+}
+
+.rectangle-2 h2:hover {
+  color: #7b68ee;
+}
+.horizontal-horizontal-clean {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rectangle-clean {
+  flex-basis: 45%;
+  margin: 20px;
+  min-width: 500px;
+}
+.rectangle-clean img {
+  width: 100%;
+}
+
+.mejuri-page h4 {
+  padding-top: 180px;
+  margin: 0px;
+}
+.mejuri-page h3 {
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+  width: 70%;
+}
+.vertical-centered {
+  text-align: center;
+  max-width: 1200px;
+  min-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.vertical-centered img {
+  width: 100%;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.about-intro {
+  display: flex;
+  flex-direction: row;
+  padding-top: 200px;
+  justify-content: center;
+}
+#wam {
+  background-color: lavender;
+}
+#wam:hover:after {
+  content: url(images/about-page/about-page-art-school.gif);
+  position: absolute;
+  top: 25%;
+  left: 54%;
+  max-width: 10%;
+}
+.about-intro div {
+  margin: 30px;
+  flex-basis: 42%;
+  z-index: 1;
+}
+.about-intro img {
+  width: 100%;
+}
+.about-intro h4 {
+  color: #121a4f;
+  text-align: left;
+  list-style-type: none;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0px;
+}
+.decoration {
+  position: absolute;
+  top: 300px;
+  right: 40px;
+  z-index: 0;
+}
+.about-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex: 1 1 100px;
+}
+
+.about-text h3 {
+  text-align: left;
+  list-style-type: none;
+  line-height: 1.5;
+  margin: 0px;
+}
+.about-text div:first-of-type {
+  color: #02635d;
+}
+.about-text div:nth-of-type(2) {
+  color: #e078ff;
+}
+.about-text div:last-of-type {
+  color: #5780ff;
+}
+.about-text div {
+  flex-basis: 400px;
+}
+
+.about-text li {
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 1.5;
+  margin: 0px;
+  text-align: left;
+}
+footer {
+  background-color: #ebffc0;
+  width: 100%;
+}
+.footer-info {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  flex-basis: 20%;
+}
+footer a {
+  color: #e078ff;
+}
+footer a:hover {
+  color: #5780ff;
+}
+footer p {
+  color: #5780ff;
+  padding: 30px;
+  margin: 0;
+  font-size: 15px;
+}
